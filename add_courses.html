@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trackit - Add Courses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add_courses.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+         <a href="index.html" class="back-button">
+            <i class="fa fa-arrow-left"></i> Back
+         </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Add Courses</h1>
+      <form>
+        <label for="course-name">Course Name:</label>
+        <input type="text" id="course-name" name="course-name" required>
+
+        <label for="course-credit">Credit Hours:</label>
+        <input type="number" id="course-credit" name="course-credit" required>
+
+        <label for="course-grade">Course Grade:</label>
+        <select id="course-grade" name="course-grade" required>
+          <option value="">Select a grade</option>
+          <option value="4.0">A</option>
+          <option value="3.7">A-</option>
+          <option value="3.3">B+</option>
+          <option value="3.0">B</option>
+          <option value="2.7">B-</option>
+          <option value="2.3">C+</option>
+          <option value="2.0">C</option>
+          <option value="1.7">C-</option>
+          <option value="1.3">D+</option>
+          <option value="1.0">D</option>
+          <option value="0.7">D-</option>
+          <option value="0.0">F</option>
+        </select>
+        <form name="add-course-form" action="add_course.html" method="post">
+            <button type="submit">Next</button>
+          </form>
+
+      </form>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>
